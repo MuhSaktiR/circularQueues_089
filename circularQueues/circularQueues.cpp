@@ -17,7 +17,7 @@ public:
 		cin >> num;
 		cout << endl;
 
-		//CEk apakah antrian penuh
+		//Cek apakah antrian penuh
 		if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1)) {
 			cout << "\nQueue Overflow\n";
 			return;
@@ -46,7 +46,7 @@ public:
 		}
 		cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
 
-		//CEk jika antrian hanya memiliki satu elemnen
+		//Cek jika antrian hanya memiliki satu elemen
 		if(FRONT == REAR) {
 			FRONT = -1;
 			REAR = -1;
